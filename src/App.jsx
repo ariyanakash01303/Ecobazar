@@ -1,4 +1,5 @@
-
+import { Routes, Route } from "react-router";
+import Home from "./pages/Home";
 
 
 function App() {
@@ -6,7 +7,9 @@ function App() {
 
   return (
     <>
-      <h2 className="bg-amber-800 text-4xl text-blue-700">Hello</h2>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </>
   )
 }
