@@ -4,5 +4,10 @@
   --color-primry:#00B207;
   --color-badgeone:#EA4B48;
   --color-badgetwo:#2388FF;
+  --color-gry:#F2F2F2;
   --text-hsize:32px;
+  --font-pop: "Poppins", sans-serif; 
+}
+.topbar{
+  @apply flex items-center ml-10 relative after:w-[2px] after:h-[15px] after:bg-[#E6E6E6] after:content-[""] after:absolute after:top-[4px] after:left-[-30px];
 }
