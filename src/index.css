@@ -8,6 +8,12 @@
   --text-hsize:32px;
   --font-pop: "Poppins", sans-serif; 
 }
+@font-face {
+  font-family: "poppins";
+  src:url("../src/assets/font/Poppins-Regular.ttf") format(ttf);
+  font-weight: normal;
+  font-style: normal;
+}
 .topbar{
   @apply flex items-center ml-10 relative after:w-[2px] after:h-[15px] after:bg-[#E6E6E6] after:content-[""] after:absolute after:top-[4px] after:left-[-30px];
 }
