@@ -2,25 +2,47 @@ import React, { useRef, useState } from 'react'
 import useOutsiteClick from '../../hooks/outsideClick';
 import { IoMdClose } from "react-icons/io";
 
-
 const Modal = () => {
-    let [open, setOpen] =useState(false);
-    let modalRef = useRef(null);
-    useOutsiteClick(modalRef,()=>setOpen(false),open);
+  let [open, setOpen] = useState(false);
+  let modalRef = useRef(null);
+
+  useOutsiteClick(modalRef, () => setOpen(false), open);
+
   return (
+    <>
+      <div>
+        <button 
+          onClick={() => setOpen(!open)} 
+          className='bg-primry px-5 py-3 ml-10 rounded text-white cursor-pointer mt-12'
+        >
+          Modal
+        </button>
 
-   <>
-   <button onClick={()=>setOpen(!open)} className='bg-primry px-5 py-3 flex ml-10 rounded-[10px] text-white cursor-pointer'>Modal</button>
+        {open && (
+          <div className='w-full h-full fixed top-0 left-0'>
+            
+            <div 
+              ref={modalRef}
+              className='w-80 h-60 bg-green-500 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'
+            >
+              
+              <p className='text-white text-center pt-20'>
+                Modal Content
+              </p>
 
-   { open &&
-    <div className='w-100 h-100 bg-green-500 mx-auto  items-center justify-center text-white font-pop flex'ref={modalRef}>
-    Modal
-    
-     <div className='relative -top-[190px] -right-[170px] text-white cursor-pointer'>
-        <IoMdClose size={24} onClick={()=>setOpen(false)} />
-     </div>
-   </div>}
-   </>
+              <IoMdClose 
+                size={22} 
+                onClick={() => setOpen(false)} 
+                className='absolute top-2 right-2 cursor-pointer text-white'
+              />
+
+            </div>
+
+          </div>
+        )}
+
+      </div>
+    </>
   )
 }
 

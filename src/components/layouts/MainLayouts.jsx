@@ -3,6 +3,7 @@ import { Outlet } from 'react-router'
 import TopBer from '../layouts/TopBer'
 import SearchBar from './SearchBar'
 import Modal from './Modal'
+import NavBer from '../NavBer'
 
 
 const MainLayouts = () => {
@@ -10,6 +11,7 @@ const MainLayouts = () => {
     <>
     <TopBer/>
     <SearchBar/>
+    <NavBer/>
     <Modal/>
     <Outlet/>
     </>
