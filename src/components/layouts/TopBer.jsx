@@ -16,7 +16,7 @@ const TopBer = () => {
    <>
    <div className='border-b border-2-b border-gry font-pop text-sm text-[#666666]  py-3.25'>
      <Container>
-        <div className='flex justify-between '>
+        <div className='flex justify-between cursor-pointer'>
             <div className='flex items-center gap-1 font-pop text-[#666666]'> <CiLocationOn /> Store Location: Lincoln- 344, Illinois, Chicago, USA</div>
             <div className='flex gap-x-5'>
               <div onClick={()=>setOpen(!open)} className='flex items-center gap-1' ref={dropDownLanRef}>ENG <FaAngleDown/>
