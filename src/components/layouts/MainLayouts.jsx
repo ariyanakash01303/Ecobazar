@@ -5,6 +5,7 @@ import SearchBar from './SearchBar'
 import Modal from './Modal'
 import NavBer from '../NavBer'
 import Footer from '../Footer'
+import Subcribe from '../Subcribe'
 
 
 const MainLayouts = () => {
@@ -14,6 +15,7 @@ const MainLayouts = () => {
     <SearchBar/>
     <NavBer/>
     <Modal/>
+    <Subcribe/>
     <Footer/>
     <Outlet/>
     </>
