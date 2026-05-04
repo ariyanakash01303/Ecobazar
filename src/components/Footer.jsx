@@ -17,7 +17,7 @@ const Footer = () => {
                     <p className='text-[#ffffff] font-pop text-sm font-normal leading-120% pr-3 mt-4 mb-4 cursor-pointer'>(219) 555-0114 <span className='text-[#808080] font-pop text-[16px] font-normal leading-120% mt-4 ml-3'>or</span></p>
                 </div>
                 <div className="relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-28.5 after:h-[2px] after:bg-primry">
-                    <p className='text-[#ffffff] font-pop text-sm font-normal leading-120% pr-8 mt-4 mb-4 cursor-pointer'> Proxy@gmail.com</p>
+                    <p className='text-[#ffffff] font-pop text-sm font-normal leading-120% pr-8 mt-4 mb-2 cursor-pointer'> Proxy@gmail.com</p>
                     
                 </div>
                 </div>
