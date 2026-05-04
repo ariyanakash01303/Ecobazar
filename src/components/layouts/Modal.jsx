@@ -10,7 +10,7 @@ const Modal = () => {
 
   return (
     <>
-      <div>
+      <div className='mt-100'>
         <button 
           onClick={() => setOpen(!open)} 
           className='bg-primry px-5 py-3 ml-10 rounded text-white cursor-pointer mt-12'

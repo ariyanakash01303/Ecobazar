@@ -4,6 +4,7 @@ import TopBer from '../layouts/TopBer'
 import SearchBar from './SearchBar'
 import Modal from './Modal'
 import NavBer from '../NavBer'
+import Footer from '../Footer'
 
 
 const MainLayouts = () => {
@@ -13,6 +14,7 @@ const MainLayouts = () => {
     <SearchBar/>
     <NavBer/>
     <Modal/>
+    <Footer/>
     <Outlet/>
     </>
     

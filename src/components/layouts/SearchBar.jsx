@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from './Container';
-import Logo from "../../assets/Logo.webp";
+import Logo from "../../assets/Logo1.webp";
 import { IoSearch } from "react-icons/io5";
 import { CiHeart } from "react-icons/ci";import { HiOutlineShoppingBag } from "react-icons/hi2";
 

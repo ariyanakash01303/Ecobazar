@@ -24,19 +24,13 @@ const NavBer = () => {
     <div className='bg-[#0e0d0d] w-full'>
       <Container>
         <nav className='flex justify-between items-center'>
-
-          <div className='flex items-center'>
-
+           <div onClick={() => setOpen(!open)}  ref={CategoryRef} className='flex items-center'>
             <div className='text-white bg-primry p-4 cursor-pointer'>
               <CiMenuBurger size={32} />
-            </div>
-
-            <div className='relative' ref={CategoryRef}>
-
-              <div 
-                onClick={() => setOpen(!open)} 
-                className='flex items-center gap-2 mr-14 pl-4 pr-4 bg-[#333333] py-5 text-white font-pop text-[16px] cursor-pointer'
-              >
+              </div>
+                <div className='relative'>
+               <div 
+                className='flex items-center gap-2 mr-14 pl-4 pr-4 bg-[#333333] py-5 text-white font-pop text-[16px] cursor-pointer'>
                 All Categories 
                 <MdOutlineKeyboardArrowDown size={20}/>
               </div>
@@ -49,49 +43,47 @@ const NavBer = () => {
               >
                 <ul className='font-pop text-sm'>
 
-                  <li className='py-3 px-4 flex items-center gap-2 hover:bg-gray-100 cursor-pointer'>
+                  <li className='py-3 px-4 flex items-center gap-2 hover:bg-gray-100 cursor-pointer hover:bg-primry'>
                     <CiApple size={20}/> Fresh Fruit
                   </li>
 
-                  <li className='py-3 px-4 flex items-center gap-2 hover:bg-gray-100 cursor-pointer'>
+                  <li className='py-3 px-4 flex items-center gap-2 hover:bg-gray-100 cursor-pointer hover:bg-primry'>
                     <FaCarrot size={20}/> Vegetables
                   </li>
 
-                  <li className='py-3 px-4 flex items-center gap-2 hover:bg-gray-100 cursor-pointer'>
+                  <li className='py-3 px-4 flex items-center gap-2 hover:bg-gray-100 cursor-pointer hover:bg-primry'>
                     <IoFishOutline size={20}/> River Fish
                   </li>
 
-                  <li className='py-3 px-4 flex items-center gap-2 hover:bg-gray-100 cursor-pointer'>
+                  <li className='py-3 px-4 flex items-center gap-2 hover:bg-gray-100 cursor-pointer hover:bg-primry'>
                     <LiaDrumstickBiteSolid size={20}/> Chicken & Meat
                   </li>
 
-                  <li className='py-3 px-4 flex items-center gap-2 hover:bg-gray-100 cursor-pointer'>
+                  <li className='py-3 px-4 flex items-center gap-2 hover:bg-gray-100 cursor-pointer hover:bg-primry'>
                     <SiBuymeacoffee size={20}/> Drink & Water
                   </li>
 
-                  <li className='py-3 px-4 flex items-center gap-2 hover:bg-gray-100 cursor-pointer'>
+                  <li className='py-3 px-4 flex items-center gap-2 hover:bg-gray-100 cursor-pointer hover:bg-primry'>
                     <CgIcecream size={20}/> Yogurt & Ice Cream
                   </li>
 
-                  <li className='py-3 px-4 flex items-center gap-2 hover:bg-gray-100 cursor-pointer'>
+                  <li className='py-3 px-4 flex items-center gap-2 hover:bg-gray-100 cursor-pointer hover:bg-primry'>
                     <GiCupcake size={20}/> Cake & Bread
                   </li>
 
-                  <li className='py-3 px-4 flex items-center gap-2 hover:bg-gray-100 cursor-pointer'>
+                  <li className='py-3 px-4 flex items-center gap-2 hover:bg-gray-100 cursor-pointer hover:bg-primry'>
                     <LuIceCreamBowl size={20}/> Butter & Cream
                   </li>
 
-                  <li className='py-3 px-4 flex items-center gap-2 hover:bg-gray-100 cursor-pointer'>
+                  <li className='py-3 px-4 flex items-center gap-2 hover:bg-gray-100 cursor-pointer hover:bg-primry'>
                     <PiCookingPot size={20}/> Cooking
                   </li>
 
-                  <li className='py-3 px-4 flex items-center gap-2 hover:bg-gray-100 cursor-pointer font-medium'>
+                  <li className='py-3 px-4 flex items-center gap-2 hover:bg-gray-100 cursor-pointer font-medium hover:bg-primry'>
                     <GoPlus size={20}/> View All Category
                   </li>
-
                 </ul>
               </div>
-
             </div>
 
             <ul className='flex gap-8 text-[#999999] font-pop text-sm py-5 cursor-pointer'>
